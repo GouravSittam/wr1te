@@ -41,9 +41,9 @@ function SigninDialog() {
   };
   const handleLogout = async () => {
     try {
-      setIsLoading(true)
-    await signOut();
-    setSession(false);
+      setIsLoading(true);
+      await signOut();
+      setSession(false);
     } catch (error) {
       console.error("sign out  error:", error);
     } finally {
@@ -68,7 +68,9 @@ function SigninDialog() {
         </DialogHeader>
         <div className="flex justify-center">
           {session ? (
-            <Button onClick={handleLogout} className="w-full" >{isLoading ? "Signing out..." : "Sign out"}</Button>
+            <Button onClick={handleLogout} className="w-full">
+              {isLoading ? "Signing out..." : "Sign out"}
+            </Button>
           ) : (
             <Button
               onClick={handleGoogleSignIn}

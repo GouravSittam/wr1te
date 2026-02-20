@@ -82,7 +82,6 @@ function UserSidebar() {
     <Sidebar className="h-dvh">
       <SidebarHeader>
         <div className="flex items-center  gap-2 px-4 py-2">
-       
           <Image
             src={Logo}
             alt="logo"

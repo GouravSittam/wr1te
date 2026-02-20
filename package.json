@@ -1,5 +1,6 @@
 {
   "name": "wryte",
+  "author": "Gourav Chaudhary",
   "version": "0.1.0",
   "private": true,
   "scripts": {

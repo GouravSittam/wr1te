@@ -3,6 +3,12 @@ import Link from "next/link";
 
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import {
+  GithubIcon,
+  TwitterIcon,
+  Linkedin01Icon,
+} from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 function Header() {
   return (
     <motion.div
@@ -23,15 +29,28 @@ function Header() {
       </div>
       <div className="flex w-fit justify-center items-center gap-6 text-sm font-medium">
         <Link href={"/"}>Features</Link>
-        <a href={"https://x.com/Taquiimam14"} target="_blank" rel="noreferrer">
-          Twitter
+        <a href={"https://x.com/Gouravv_c"} target="_blank" rel="noreferrer">
+          <Button variant={"outline"} size={"icon"}>
+            <HugeiconsIcon icon={TwitterIcon} />
+          </Button>
         </a>
         <a
-          href={"https://github.com/taqui-786"}
+          href={"https://github.com/GouravSittam"}
           target="_blank"
           rel="noreferrer"
         >
-          Github
+          <Button variant={"outline"} size={"icon"}>
+            <HugeiconsIcon icon={GithubIcon} />
+          </Button>
+        </a>
+        <a
+          href={"https://www.linkedin.com/in/gouravsittam/"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button variant={"outline"} size={"icon"}>
+            <HugeiconsIcon icon={Linkedin01Icon} />
+          </Button>
         </a>
       </div>
       <div className="">

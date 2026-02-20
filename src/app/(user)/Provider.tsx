@@ -8,7 +8,9 @@ export function Provider({ children }: { children: React.ReactNode }) {
 
   return (
     <NuqsAdapter>
-      <QueryClientProvider client={client}><Suspense fallback={null}>{children}</Suspense></QueryClientProvider>
+      <QueryClientProvider client={client}>
+        <Suspense fallback={null}>{children}</Suspense>
+      </QueryClientProvider>
     </NuqsAdapter>
   );
 }

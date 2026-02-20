@@ -121,7 +121,9 @@ export default async function SettingsPage() {
           <Card>
             <CardHeader>
               <CardTitle>Active Session</CardTitle>
-              <CardDescription>This device is currently signed in.</CardDescription>
+              <CardDescription>
+                This device is currently signed in.
+              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-start gap-3 rounded-xl border bg-muted/30 p-4">

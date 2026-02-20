@@ -41,7 +41,7 @@ class SelectionSizeTooltip {
         <Button variant="ghost" size="sm">
           0
         </Button>
-      </div>
+      </div>,
     );
 
     this.update(view, null);
@@ -95,7 +95,7 @@ class SelectionSizeTooltip {
     const toggleBold = () => {
       const result = toggleMark(this.view.state.schema.marks.strong)(
         this.view.state,
-        this.view.dispatch
+        this.view.dispatch,
       );
       if (result) {
         toolMarkInactive("tool-strong");
@@ -112,7 +112,7 @@ class SelectionSizeTooltip {
     const toggleItalic = () => {
       const result = toggleMark(this.view.state.schema.marks.em)(
         this.view.state,
-        this.view.dispatch
+        this.view.dispatch,
       );
       if (result) {
         toolMarkInactive("tool-em");
@@ -129,7 +129,7 @@ class SelectionSizeTooltip {
     const toggleCode = () => {
       const result = toggleMark(this.view.state.schema.marks.code)(
         this.view.state,
-        this.view.dispatch
+        this.view.dispatch,
       );
       if (result) {
         toolMarkInactive("tool-code");
@@ -146,7 +146,7 @@ class SelectionSizeTooltip {
     const toggleUnderline = () => {
       const result = toggleMark(this.view.state.schema.marks.underline)(
         this.view.state,
-        this.view.dispatch
+        this.view.dispatch,
       );
       if (result) {
         toolMarkInactive("tool-underline");
@@ -163,7 +163,7 @@ class SelectionSizeTooltip {
     const toggleStrike = () => {
       const result = toggleMark(this.view.state.schema.marks.strike)(
         this.view.state,
-        this.view.dispatch
+        this.view.dispatch,
       );
       if (result) {
         toolMarkInactive("tool-strike");
@@ -256,7 +256,7 @@ class SelectionSizeTooltip {
           viewRef={{ current: this.view } as any}
           mySchema={this.view.state.schema}
         />
-      </div>
+      </div>,
     );
   }
 

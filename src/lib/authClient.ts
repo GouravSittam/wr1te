@@ -4,15 +4,16 @@ export const authClient = createAuthClient({
 });
 
 export const signIn = async () => {
-  await authClient.signIn.social({
-    provider: "google",
-    callbackURL:"/write"
-  },{redirect:'follow'});
-  
+  await authClient.signIn.social(
+    {
+      provider: "google",
+      callbackURL: "/write",
+    },
+    { redirect: "follow" },
+  );
 };
 
 export const signOut = async () => {
   const data = await authClient.signOut();
-  return data
+  return data;
 };
-

@@ -115,7 +115,7 @@ export function autocompletePlugin(schema: any) {
             spinnerContainer.style.verticalAlign = "baseline";
             const spinnerSvg = document.createElementNS(
               "http://www.w3.org/2000/svg",
-              "svg"
+              "svg",
             );
             spinnerSvg.setAttribute("width", "16");
             spinnerSvg.setAttribute("height", "16");
@@ -124,7 +124,7 @@ export function autocompletePlugin(schema: any) {
             spinnerSvg.setAttribute("class", "animate-spin");
             const path = document.createElementNS(
               "http://www.w3.org/2000/svg",
-              "path"
+              "path",
             );
             path.setAttribute("fill", "none");
             path.setAttribute("stroke", "currentColor");
@@ -133,7 +133,7 @@ export function autocompletePlugin(schema: any) {
             path.setAttribute("stroke-width", "1.5");
             path.setAttribute(
               "d",
-              "M18.001 20A9.96 9.96 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 .863-.11 1.701-.315 2.5c-.223.867-1.17 1.27-2.015.973c-.718-.253-1.048-1.073-.868-1.813A7 7 0 1 0 15.608 18"
+              "M18.001 20A9.96 9.96 0 0 1 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10c0 .863-.11 1.701-.315 2.5c-.223.867-1.17 1.27-2.015.973c-.718-.253-1.048-1.073-.868-1.813A7 7 0 1 0 15.608 18",
             );
             path.setAttribute("color", "currentColor");
             spinnerSvg.appendChild(path);

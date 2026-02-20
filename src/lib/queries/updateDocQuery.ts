@@ -13,13 +13,12 @@ export const useUpdateDoc = () => {
   return useMutation<DocsUpdated, Error, UpdateDocSchema>({
     mutationFn: (variables) => updateUserDocs(variables),
     onSuccess: (newDoc) => {
-
       queryClient.setQueryData(["users-docs"], (oldData: DocsUpdated[] = []) =>
         oldData.map((doc) =>
           doc.id === newDoc.id && newDoc.title !== oldData[0].title
             ? { ...doc, title: newDoc.title } // update only title
-            : doc
-        )
+            : doc,
+        ),
       );
 
       // toast.success("Document updated successfully");

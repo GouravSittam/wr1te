@@ -466,7 +466,7 @@ function WriteClient() {
 
   return (
     <ResizablePanelGroup orientation="horizontal" className="overflow-hidden ">
-      <ResizablePanel defaultSize={70}  className="max-h-[calc(100vh-4rem)]">
+      <ResizablePanel defaultSize={70} className="max-h-[calc(100vh-4rem)]">
         <ScrollArea className="h-full">
           <div className="w-full flex p-4  justify-center">
             <div className=" max-w-5xl w-full h-full flex flex-col  gap-4  ">
@@ -530,7 +530,7 @@ function WriteClient() {
         </ScrollArea>
       </ResizablePanel>
       <ResizableHandle withHandle />
-      <ResizablePanel defaultSize={30}  className="max-h-[calc(100vh-4rem)]">
+      <ResizablePanel defaultSize={30} className="max-h-[calc(100vh-4rem)]">
         <AgentSidebar
           editorMarkdown={latestValueRef.current}
           onEditorUpdate={(nextOutput) => {

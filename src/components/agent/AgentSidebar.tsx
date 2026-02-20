@@ -438,7 +438,7 @@ function AgentSidebar({
     }
   };
 
-  // Taqui yrr don't remove this code
+  // Core message reading logic
   useEffect(() => {
     if (!isThinking) return;
 

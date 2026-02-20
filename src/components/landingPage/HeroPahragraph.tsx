@@ -29,21 +29,21 @@ function HeroPahragraph() {
         , not a few hours.
       </motion.p>
       <motion.div
-              initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}>
-
-      <Link href={"/signin"}>
-        <Button size={"lg"} className="mt-12 group cursor-pointer">
-          Let's Start Writting{" "}
-          <ArrowRightIcon
-            size="20"
-            className="group-hover:-rotate-45 transition-transform"
+        viewport={{ once: true }}
+      >
+        <Link href={"/signin"}>
+          <Button size={"lg"} className="mt-12 group cursor-pointer">
+            Let's Start Writting{" "}
+            <ArrowRightIcon
+              size="20"
+              className="group-hover:-rotate-45 transition-transform"
             />
-        </Button>
-      </Link>
-            </motion.div>
+          </Button>
+        </Link>
+      </motion.div>
     </>
   );
 }
