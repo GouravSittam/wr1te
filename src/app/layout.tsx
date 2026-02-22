@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
-import { DM_Sans } from "next/font/google";
+import { Fredoka } from "next/font/google";
 
-const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
+const fredoka = Fredoka({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
   title: "Wr1te",
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={dmSans.variable}>
+    <html lang="en" className={fredoka.variable}>
       <body className={` antialiased`}>
         {children}
         <Toaster richColors={true} />
